@@ -309,12 +309,12 @@
     border-radius: 5px;
   }
   .project h3{
-    font-size: 3.5vh;
+    font-size: 3vh;
     margin-bottom: 10px;
   }
   
   .project div{
-    font-size: 2.5vh;
+    font-size: 2vh;
     height:fit-content;
   }
   .prj-btn-cls{
@@ -336,7 +336,7 @@
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px 15px;
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-align: center;
     align-items: center;
     margin: 10px 30px;

@@ -92,7 +92,6 @@
     color: rgb(159, 81, 231);
   }
   .leftsection{
-    /* background-color: aqua; */
     font-size: 3rem;
   }
   .leftsection div{
@@ -162,7 +161,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   .timelinecard p{
-    font-size: 2vw;
+    font-size: 1vw;
   }
   h1 {
     text-align: center;
@@ -208,7 +207,7 @@
     justify-content: center;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(109, 98, 207, 0.1);
   }
   
   .card-front {
@@ -247,11 +246,12 @@
   }
 
   .project{
-  
+    position: relative;
     border: 1px solid black;
     width: 50vh;
     border-radius: 10px;
     padding: 15px;
+    padding-bottom: 60px;
     margin: 0 10px;
     align-items: center;
     text-align: justify;
@@ -260,8 +260,6 @@
     width: 100%;
     border-radius: 5px;
   }
-  
-  
   .project h3{
     font-size: 3.5vh;
     margin-bottom: 10px;
@@ -271,18 +269,56 @@
     font-size: 2.5vh;
     height:fit-content;
   }
+  .prj-btn-cls{
+    
+    position:absolute;
+    left :0;
+    right: 0;
+    bottom: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
   .project button{
+    
+    color: white;
     background-color: #6767c3;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px 15px;
     font-size: 2.5vh;
     text-align: center;
     align-items: center;
-    margin: 5px 30px;
+    margin: 10px 30px;
+    transition: transform 0.3s ease;
   }
-  
-  
+  .project button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+  }
+  .more-projects-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .more-projects-btn button{
+    user-select: none;
+    border: 1px solid #6767c3;
+    border-radius: 15px;
+    padding: 10px;
+    background-color:#1d1835;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(109, 98, 207, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .more-projects-btn button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+  }
   @media screen and (max-width: 768px) {
     .nav-links {
       display: none;
@@ -302,6 +338,47 @@
     .hamburger {
       display: flex;
     }
+    .intro{
+      flex-direction: column;
+      width: 100%;
+      padding: 0 15px;
+    }
+    .intro div{
+      
+      width: 100%;
+      user-select: none;
+      cursor: default;
+    }
+    .leftsection{
+      font-size: 2.5rem;
+    }
+    .leftsection div{
+      width: 100%;
+    }
+    .rightsection img{
+      height: 0px;
+    }
+    .about{
+      flex-direction: column;
+      align-items: center;
+    }
+    .about div{
+      width :100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .leftabout img{
+      margin-bottom: 10px;
+      width: 50%;
+      background: none;
+      border-radius: 100%;
+    }
+    .rightabout p {
+      text-align: justify;
+      font-size: 3vw;
+    }
     .timeline{
       flex-direction: column;
       align-items: center;
@@ -309,6 +386,10 @@
     .timelinecard{
       width: 100%;
       margin: 10px 0;
+      font-size: 4vw;
+    }
+    .timelinecard p{
+      font-size: 3vw;
     }
     .skills-container {
       flex-direction: column;
@@ -320,6 +401,7 @@
     }
     .project{
       width: 100%;
+      margin: 5px 0;
     }
     .skills-container .skill-category {
       width: 80%;

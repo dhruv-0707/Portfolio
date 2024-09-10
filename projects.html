@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv - Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            background-color: #130f29;
+            color: white;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            position: relative;
+            border: 1px solid black;
+            width: 50vh;
+            min-width: 250px;
+            border-radius: 10px;
+            padding: 15px;
+            padding-bottom: 60px;
+            margin: 5px 10px;
+            align-items: center;
+            text-align: justify;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            font-size: 3.5vh;
+            margin-bottom: 10px;
+        }
+
+        .project div {
+            font-size: 2.5vh;
+            height: fit-content;
+        }
+
+        .prj-btn-cls {
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .project button {
+            color: white;
+            background-color: #6767c3;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 2.5vh;
+            text-align: center;
+            align-items: center;
+            margin: 10px 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .project button:hover {
+            cursor: pointer;
+            transform: translateY(-1px);
+        }
+
+        @media screen and (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+            }
+
+            .project {
+                margin: 5px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1 style="text-align: center; padding: 10px 0;">Projects</h1>
+    <div class="projects">
+        <div class="project">
+            <img src="chatapp.png" alt="">
+            <h3>Chat App - ChatU</h3>
+            <div>
+                Used android studio with JAVA and XML to build a realtime chat application.
+                Used firebase for account handling and real time database. User can register and start chatting.
+                Used firebase for backend of applications like for storing data online ,storing images and storing chat.
+            </div>
+            <div class="prj-btn-cls"><a href="https://github.com/dhruv-0707/ChatU"><button class="projectbtn">See
+                        More</button>
+                </a></div>
+        </div>
+        <div class="project">
+            <img src="newsapp.png" alt="">
+            <h3>News App - NewsX</h3>
+            <div>
+                Developed an app using android studio that displays the latest top news headlines.
+                Used news api to load news in the app with a search feature to search for your topic.
+                Learned about api, JSON response, image loading from url, use of recycler view, card layout.
+            </div>
+            <div class="prj-btn-cls"><a href="https://github.com/dhruv-0707/NewsX"><button class="projectbtn">See
+                        More</button>
+                </a></div>
+        </div>
+        <div class="project">
+            <img src="notesapp.png" alt="">
+            <h3>Notes App</h3>
+            <div>Created a user-friendly and responsive notes app using Jetpack Compose, implementing state
+                management and Material Design components.
+                Integrated a Room database for efficient storage and retrieval of notes, utilizing DAOs, LiveData, and
+                Kotlin Flow for reactive data handling.</div>
+            <div class="prj-btn-cls"><a href="https://github.com/dhruv-0707/Notes"><button class="projectbtn">See
+                        More</button>
+                </a></div>
+        </div>
+        <div class="project">
+            <img src="tiktaktoe.png" alt="">
+            <h3>Tik Tak Toe</h3>
+            <div>Developed a Tic-Tac-Toe app using Android Studio with 
+                Java for logic implementation and XML for designing a responsive user interface.
+                Used GridLayout to create a simple and intuitive 3x3 game board, enhancing the
+                 user experience with animations and interactive touch events.</div>
+            <div class="prj-btn-cls"><a href="https://github.com/dhruv-0707/Tik-Tak-Toe"><button class="projectbtn">See
+                        More</button>
+                </a></div>
+        </div>
+        <div class="project">
+            <img src="developer.png" alt="">
+            <h3>Portfolio Website</h3>
+            <div>Developed a Tic-Tac-Toe app using Android Studio with 
+                Java for logic implementation and XML for designing a responsive user interface.
+                Used GridLayout to create a simple and intuitive 3x3 game board, enhancing the
+                 user experience with animations and interactive touch events.</div>
+            <div class="prj-btn-cls"><a href="https://github.com/dhruv-0707/Portfolio"><button class="projectbtn">See
+                        More</button>
+                </a></div>
+        </div>
+        <!-- <div class="project">
+            <img src="notesapp.png" alt="">
+            <h3>Notes App</h3>
+            <div>Created a user-friendly and responsive notes app using Jetpack Compose, implementing state
+                management and Material Design components.
+                Integrated a Room database for efficient storage and retrieval of notes, utilizing DAOs, LiveData, and
+                Kotlin Flow for reactive data handling.</div>
+            <div class="prj-btn-cls"><a href="https://github.com/dhruv-0707/Notes"><button class="projectbtn">See
+                        More</button>
+                </a></div>
+        </div> -->
+    </div>
+</body>
+
+</html>

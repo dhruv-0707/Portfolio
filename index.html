@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv Nautiyal - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=
+Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;
+0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;
+1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Dhruv Nautiyal</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#!" onclick="scrollToSection('about')">About</a></li>
+        <li><a href="#!" onclick="scrollToSection('education')">Education</a></li>
+        <li><a href="#!" onclick="scrollToSection('skills')">Skills</a></li>
+        <li><a href="#!" onclick="scrollToSection('projects')">Projects</a></li>
+        <li><a href="#!" onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!--intro section-->
+  <section class="intro">
+    <div class="leftsection">Hi, I am <span class="name">Dhruv</span>
+      <div>
+        and I am a <div style="height:2em"><span id="element" class="disp"></span></div>
+      </div>
+      <div class="buttons">
+        <a href="https://drive.google.com/file/d/1wXy3nWUfoUPE_4QQI-8vSSuK3H3eUFwA/view?usp=sharing" target="_blank">
+          <button class="Resume">Resume</button></a>
+        <a href="https://github.com/dhruv-0707" target="_blank"><button class="github">Github</button></a>
+      </div>
+    </div>
+    <div class="rightsection">
+      <img src="developer.png" alt="">
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="section aboutsection">
+    <h1>About Me</h1>
+    <div class="about">
+      <div class="leftabout">
+        <img src="profile.png" alt="">
+      </div>
+      <div class="rightabout">
+        <p>
+          I am Dhruv Nautiyal, a dedicated software development enthusiast with hands-on experience in Android
+          applications
+          and web interfaces. I'm passionate about continuous learning and always striving to excel in software
+          development
+          by
+          acquiring new skills.
+        </p>
+        <p>
+          Currently, I'm pursuing a BTech in Electronics and Communication Engineering at Malaviya National Institute of
+          Technology, Jaipur.
+          Apart from coding, I enjoy cycling, playing chess, and keeping up with emerging tech trends.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h1>Education</h1>
+    <div class="timeline">
+      <div class="timelinecard college">
+        <h4>Btech : [2022-2026(expected)]</h4>
+        <h5>Malaviya National Institute of Technology Jaipur</h5>
+        <h6>Electronics and Communications</h6>
+        <p>CGPA - 7.96 </p>
+      </div>
+      <div class="timelinecard 12th">
+        <h4>Senior Secondary: [2019-2021]</h4>
+        <h5>St. Theresa's School Srinagar, Uttarakhand</h5>
+        <h6>Science - PCM</h6>
+        <p>Percentage - 97.5%</p>
+      </div>
+      <div class="timelinecard 10th">
+        <h4>High School : [2019]</h4>
+        <h5>St. Theresa's School Srinagar, Uttarakhand</h5>
+        <h6>Class X</h6>
+        <p>Percentage - 94.8</p>
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="section skill">
+    <h1>Skills</h1>
+    <div class="skills-container">
+      <div class="skill-category">
+        <div class="card-front">
+          <h2>Programming Languages</h2>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>C, C++</li>
+            <li>Python</li>
+            <li>HTML, CSS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="card-front">
+          <h2>Development Tools</h2>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Android Studio (JetPack Compose)</li>
+            <li>Firebase (Backend Management)</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="card-front">
+          <h2>Other Skills</h2>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>Basic Web Development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h1>Projects</h1>
+    <div class="project">
+      <h2>Chat Application - ChatU</h2>
+      <p>
+        Developed a real-time chat application using Android Studio with Java and XML. Integrated Firebase for
+        account handling and a real-time database for storing messages and images.
+        <a href="https://github.com/dhruvnautiyal/ChatU" target="_blank">View on GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h2>News Application - NewsX</h2>
+      <p>
+        Created a news app using Android Studio that displays top news headlines. Implemented the NewsAPI to fetch and
+        search for news
+        using RecyclerView and Card Layouts. Learned about JSON, API calls, and image loading from URLs.
+        <a href="https://github.com/dhruvnautiyal/NewsX" target="_blank">View on GitHub</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h2>Notes App</h2>
+      <p>
+        Built a notes app using Jetpack Compose, incorporating Material Design components and state management.
+        Integrated Room Database for efficient note storage and retrieval using DAOs, LiveData, and Kotlin Flow for data
+        handling.
+        <a href="https://github.com/dhruvnautiyal/NotesApp" target="_blank">View on GitHub</a>
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h1>Contact</h1>
+    <p>Feel free to connect with me on LinkedIn or email me at:</p>
+    <p>📧 <a href="mailto:dhruvnautiyal0707@gmail.com">dhruvnautiyal0707@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/dhruv-nautiyal" target="_blank">LinkedIn: Dhruv Nautiyal</a></p>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Developer', 'Coder', 'Tech Enthusiast'],
+      typeSpeed: 50,
+      loop: true,
+      loopCount: Infinity,
+      showCursor: false,
+      fadeOut: true,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 350,
+    });
+  </script>
+</body>
+
+</html>

@@ -101,7 +101,7 @@
   .buttons{
     display: flex;
     justify-content:flex-start;
-    margin-top: 10px;
+    margin-top: 25px;
   }
   .buttons button{
     font-size:medium;
@@ -241,18 +241,47 @@
   .is-flipped {
     transform: rotateY(180deg);
   }
-  .project, .education-entry {
-    margin-bottom: 30px;
+  .projects{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project{
+  
+    border: 1px solid black;
+    width: 50vh;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 10px;
+    align-items: center;
+    text-align: justify;
+  }
+  .project img{
+    width: 100%;
+    border-radius: 5px;
   }
   
-  .project h2, .education-entry h2 {
-    font-size: 1.5rem;
+  
+  .project h3{
+    font-size: 1.5vw;
     margin-bottom: 10px;
   }
   
-  .project p, .education-entry p {
-    font-size: 1.1rem;
+  .project div{
+    font-size: 1vw;
+    height:fit-content;
   }
+  .project button{
+    background-color: #6767c3;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 1.4vw;
+    text-align: center;
+    align-items: center;
+    
+  }
+  
   
   @media screen and (max-width: 768px) {
     .nav-links {
@@ -273,7 +302,10 @@
     .hamburger {
       display: flex;
     }
-  
+    .timeline{
+      flex-direction: column;
+      align-items: center;
+    }
     .skills-container {
       flex-direction: column;
       align-items: center;

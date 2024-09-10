@@ -9,8 +9,4 @@ function scrollToSection(sectionId) {
     behavior: 'smooth'
   });
 }
-// const card = document.querySelectorAll('.skill-category');
 
-// card.addEventListener('click', function() {
-//   card.classList.toggle('is-flipped');
-// });

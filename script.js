@@ -13,7 +13,6 @@ function scrollToSection(sectionId) {
 }
 more_proj.addEventListener('click', () => {
   window.location.href = "projects.html";
-  alert("hello");
 });
 phone_c.addEventListener('click', () => {
   

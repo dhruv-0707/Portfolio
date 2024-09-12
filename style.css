@@ -107,6 +107,7 @@
   .disp{
     color: rgb(159, 81, 231);
   }
+  
   .leftsection{
     font-size: 3rem;
   }
@@ -133,7 +134,12 @@
     transform: translateY(-3px);
     cursor: pointer;
   }
-  
+  .aboutsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .rightsection img{
     width: 80%;
   }
@@ -141,13 +147,20 @@
     display: flex;
     justify-content: space-around;
     margin: 35px 0;
+    width: 100vw;
+    padding: 20px;
   }
   .about div{
     width :40%;
 
   }
+  .leftabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .leftabout img{
-    width: 80%;
+    width: 60%;
     background: none;
     border-radius: 100%;
   }

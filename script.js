@@ -17,6 +17,13 @@ more_proj.addEventListener('click', () => {
 phone_c.addEventListener('click', () => {
   
 });
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+
 function copytext(){
   navigator.clipboard.writeText(text).then(() => {
     // Show an alert dialog

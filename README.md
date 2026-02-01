@@ -116,16 +116,3 @@ The website is fully responsive and optimized for:
 - **Email**: dhruvnautiyal0707@gmail.com
 - **Phone**: +91 7037052148
 
-## 📄 License
-
-© 2024 D. N. Company, Inc. All rights reserved.
-
-## 🙏 Acknowledgments
-
-- Typed.js for the typing animation effect
-- Google Fonts for the Poppins font family
-- Icons and illustrations used in the project
-
----
-
-**Made with ❤️ by Dhruv Nautiyal**
